@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0px auto;
+}
+header {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  margin: 15px auto;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.split {
+  height: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+.hero-info {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-image-section {
+  flex-basis: 40%;
+}
+
+.hero-info > h1 {
+  font-size: 3rem;
+}
+
+.hero-info > p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  width: 90%;
+}
+
+.btn {
+  width: 125px;
+  height: 35px;
+}
+.hero-img {
+  width: 100%;
+}
+
+.founder-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.founder-info > img {
+  flex-basis: 20%;
+  width: 20%;
+  height: 20%;
+  display: inline-block;
+  border-radius: 50%;
+}
+.founder-desc {
+  flex-basis: 75%;
+  font-size: 0.8rem;
+}
+
+.modules-title {
+  font-size: 2.3rem;
+}
+
+.modules {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  border-top: 5px solid black;
+}
+.card > .desc {
+  font-size: 0.8rem;
+  color: gray;
+}
+.btn-blue {
+  background: lightskyblue;
+  width: 50px;
+  text-align: center;
+  color: blue;
+}
+.card > * {
+  margin: 5px 0px;
+}
+
+.card:nth-child(1) {
+  border-top: 5px solid rgb(0, 161, 0);
+}
+
+.card:nth-child(2) {
+  border-top: 5px solid rgb(90, 77, 211);
+}
+.card:nth-child(3) {
+  border-top: 5px solid rgb(212, 30, 60);
+}
+.card:nth-child(4) {
+  border-top: 5px solid rgb(40, 151, 255);
+}
+.card:nth-child(5) {
+  border-top: 5px solid rgb(0, 235, 215);
+}
+.card:nth-child(6) {
+  border-top: 5px solid rgb(0, 248, 145);
+}
+.card:nth-child(7) {
+  border-top: 5px solid rgb(180, 214, 25);
+}
+.card:nth-child(8) {
+  border-top: 5px solid rgb(209, 115, 86);
+}
+.card:nth-child(9) {
+  border-top: 5px solid rgb(214, 109, 179);
+}
+.card:nth-child(10) {
+  border-top: 5px solid rgb(55, 106, 218);
+}
+.card:nth-child(11) {
+  border-top: 5px solid rgb(24, 93, 124);
+}
+.card:nth-child(12) {
+  border-top: 5px solid rgb(192, 70, 0);
+}
+.card:nth-child(13) {
+  border-top: 5px solid rgb(126, 0, 245);
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 125vh;
+  }
+  .split {
+    flex-direction: column;
+  }
+  .modules {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
