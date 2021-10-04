@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1050px;
+  max-width: 80%;
   margin: 0px auto;
 }
 header {
@@ -21,11 +21,22 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
-
+.heading {
+  color: #222;
+}
+.heading-desp {
+  color: #888;
+}
+.heading-desp > a {
+  text-decoration: none;
+  color: black;
+}
 nav {
   margin: 15px auto;
   border-bottom: 1px solid rgb(231, 231, 231);
+  height: 65px;
 }
 
 .split {
@@ -160,5 +171,9 @@ nav {
   .modules {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+
+  .container {
+    max-width: 80%;
   }
 }
